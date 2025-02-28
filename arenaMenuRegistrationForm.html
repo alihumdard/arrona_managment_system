@@ -21,7 +21,6 @@
 		<!-- BEGIN #header -->
 		<div id="header" class="app-header">
 
-
 			<!-- BEGIN desktop-toggler -->
 			<div class="desktop-toggler">
 				<button type="button" class="menu-toggler">
@@ -339,84 +338,64 @@
 		</div>
 		<!-- END #top-nav -->
 
-		<!-- BEGIN #content -->
-		<div id="content" class="app-content">
-			<!-- BEGIN container -->
-			<div class="container">
-				<!-- BEGIN row -->
-				<div class="row justify-content-center">
-					<!-- BEGIN col-10 -->
-					<div class="col-xl-10">
-						<!-- BEGIN row -->
-						<div class="row">
-							<!-- BEGIN col-9 -->
-							<div class="col-xl-9">
 
-
-								<h1 class="page-header">
-									Arena Detail FOrm
-								</h1>
-
-								<hr class="mb-4">
-
-
-
-
-
-								<form>
-									<div class="mb-3">
-										<label class="form-label">Name</label>
-										<input type="text" class="form-control form-control-lg bg-inverse bg-opacity-5"
-											placeholder="e.g John Smith">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Email Address</label>
-										<input type="text" class="form-control form-control-lg bg-inverse bg-opacity-5"
-											placeholder="username@address.com">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Password</label>
-										<input type="password"
-											class="form-control form-control-lg bg-inverse bg-opacity-5">
-									</div>
-									<div class="mb-3">
-										<label class="form-label">Role</label>
-										<select class="form-select form-select-lg bg-inverse bg-opacity-5">
-											<option>Admin</option>
-											<option>Manager</option>
-											<option>Editor</option>
-										</select>
-									</div>
-									<div class="mb-3 text-center">
-										<button type="submit" class="btn btn-outline-theme btn-lg w-100">Add</button>
-									</div>
-								</form>
-
-
-
-							</div>
-							<!-- END col-9-->
-							<!-- BEGIN col-3 -->
-							<div class="col-xl-3">
-
-							</div>
-							<!-- END col-3 -->
-						</div>
-						<!-- END row -->
-					</div>
-					<!-- END col-10 -->
+		<!-- start of form -->
+		<div class="d-flex justify-content-center">
+			<form class="w-50">
+				<div class="mb-3">
+					<label class="form-label">Arena Name</label>
+					<input type="text" class="form-control form-control-lg bg-inverse bg-opacity-5" placeholder="e.g John Smith">
 				</div>
-				<!-- END row -->
-			</div>
-			<!-- END container -->
+				<div class="mb-3">
+					<label class="form-label">Email Address</label>
+					<input type="text" class="form-control form-control-lg bg-inverse bg-opacity-5" placeholder="username@address.com">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Phone Number</label>
+					<input type="number" class="form-control form-control-lg bg-inverse bg-opacity-5">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Alternative Phone Number</label>
+					<input type="number" class="form-control form-control-lg bg-inverse bg-opacity-5">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Website</label>
+					<input type="text" class="form-control form-control-lg bg-inverse bg-opacity-5">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Location</label>
+					<select class="form-select form-select-lg bg-inverse bg-opacity-5">
+						<option>Pakistan</option>
+						<option>UAE</option>
+						<option>India</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Pax</label>
+					<select class="form-select form-select-lg bg-inverse bg-opacity-5">
+						<option>10-50</option>
+						<option>51-100</option>
+						<option>101-300</option>
+						<option>301-500</option>
+					</select>
+				</div>
+				<div class="mb-3 text-center">
+					<button type="submit" class="btn btn-outline-theme btn-lg w-100">Add</button>
+				</div>
+			</form>
 		</div>
-		<!-- END #content -->
+		
 
 		<!-- BEGIN btn-scroll-top -->
 		<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
 		<!-- END btn-scroll-top -->
 	</div>
 	<!-- END #app -->
+
+
+
+
+
 
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="assets/js/vendor.min.js"></script>
