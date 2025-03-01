@@ -1,114 +1,211 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>HUD | Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>HUD | Admin Panel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <!-- ================== BEGIN core-css ================== -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/app.min.css" rel="stylesheet" />
+    <!-- ================== END core-css ================== -->
+  </head>
 
-  <!-- ================== BEGIN core-css ================== -->
-  <link href="assets/css/vendor.min.css" rel="stylesheet" />
-  <link href="assets/css/app.min.css" rel="stylesheet" />
-  <!-- ================== END core-css ================== -->
-</head>
+  <body class="pace-top">
+    <!-- BEGIN #app -->
+    <div id="app" class="app app-full-height app-without-header">
+      <!-- BEGIN admin panel -->
+      <div class="container mt-5">
+        <h1 class="text-center">Admin Panel</h1>
 
-<body class="pace-top">
-  <!-- BEGIN #app -->
-  <div id="app" class="app app-full-height app-without-header">
-    <!-- BEGIN admin panel -->
-    <div class="container mt-5">
-      <h1 class="text-center">Admin Panel</h1>
-
-      <div id="stripedRows" class="mb-5">
-
-        <div class="card">
-          <div class="card-body">
-            <table class="table table-striped mb-0">
-              <thead>
-                <tr>
-                  <th scope="col">id</th>
-                  <th scope="col">adminName</th>
-                  <th scope="col">Email</th>
-                  <th scope="col" class="text-center">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>JohnSmith</td>
-                  <td>JohnSmith@gmail.com</td>
-                  <td class="text-center">
-                    <button type="submit" class="btn btn-outline-theme">Add </button>
-                    <button type="submit" class="btn btn-outline-theme">Delete </button>
-                    <button type="submit" class="btn btn-outline-theme">Edit </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>JohnSmith</td>
-                  <td>JohnSmith@gmail.com</td>
-                  <td class="text-center">
-                    <button type="submit" class="btn btn-outline-theme">Add </button>
-                    <button type="submit" class="btn btn-outline-theme">Delete </button>
-                    <button type="submit" class="btn btn-outline-theme">Edit </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>JohnSmith</td>
-                  <td>JohnSmith@gmail.com</td>
-                  <td class="text-center">
-                    <button type="submit" class="btn btn-outline-theme">Add </button>
-                    <button type="submit" class="btn btn-outline-theme">Delete </button>
-                    <button type="submit" class="btn btn-outline-theme">Edit </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>JohnSmith</td>
-                  <td>JohnSmith@gmail.com</td>
-                  <td class="text-center">
-                    <button type="submit" class="btn btn-outline-theme">Add </button>
-                    <button type="submit" class="btn btn-outline-theme">Delete </button>
-                    <button type="submit" class="btn btn-outline-theme">Edit </button>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>JohnSmith</td>
-                  <td>JohnSmith@gmail.com</td>
-                  <td class="text-center">
-                    <button type="submit" class="btn btn-outline-theme">Add </button>
-                    <button type="submit" class="btn btn-outline-theme">Delete </button>
-                    <button type="submit" class="btn btn-outline-theme">Edit </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        <div id="stripedRows" class="mb-5">
+          <div class="card">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-striped mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">id</th>
+                      <th scope="col">adminName</th>
+                      <th scope="col">Email</th>
+                      <th scope="col" class="text-center">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>JohnSmith</td>
+                      <td>JohnSmith@gmail.com</td>
+                      <td class="text-center">
+                        <div
+                          class="btn-group-vertical btn-group-sm w-100 w-md-auto"
+                          role="group"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Add
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>JohnSmith</td>
+                      <td>JohnSmith@gmail.com</td>
+                      <td class="text-center">
+                        <div
+                          class="btn-group-vertical btn-group-sm w-100 w-md-auto"
+                          role="group"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Add
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>JohnSmith</td>
+                      <td>JohnSmith@gmail.com</td>
+                      <td class="text-center">
+                        <div
+                          class="btn-group-vertical btn-group-sm w-100 w-md-auto"
+                          role="group"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Add
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>JohnSmith</td>
+                      <td>JohnSmith@gmail.com</td>
+                      <td class="text-center">
+                        <div
+                          class="btn-group-vertical btn-group-sm w-100 w-md-auto"
+                          role="group"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Add
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>JohnSmith</td>
+                      <td>JohnSmith@gmail.com</td>
+                      <td class="text-center">
+                        <div
+                          class="btn-group-vertical btn-group-sm w-100 w-md-auto"
+                          role="group"
+                        >
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Add
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto mb-2"
+                          >
+                            Delete
+                          </button>
+                          <button
+                            type="submit"
+                            class="btn btn-outline-theme w-100 w-md-auto"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-arrow">
+              <div class="card-arrow-top-left"></div>
+              <div class="card-arrow-top-right"></div>
+              <div class="card-arrow-bottom-left"></div>
+              <div class="card-arrow-bottom-right"></div>
+            </div>
           </div>
-          <div class="card-arrow">
-            <div class="card-arrow-top-left"></div>
-            <div class="card-arrow-top-right"></div>
-            <div class="card-arrow-bottom-left"></div>
-            <div class="card-arrow-bottom-right"></div>
-          </div>
-          <!-- <div class="hljs-container">
-					<pre><code class="xml" data-url="assets/data/table-elements/code-3.json"></code></pre>
-				</div> -->
         </div>
+
+        <!-- END #stripedRows -->
       </div>
-      <!-- END #stripedRows -->
+      <!-- END admin panel -->
     </div>
-    <!-- END admin panel -->
-  </div>
-  <!-- END #app -->
+    <!-- END #app -->
 
-  <!-- ================== BEGIN core-js ================== -->
-  <script src="assets/js/vendor.min.js"></script>
-  <script src="assets/js/app.min.js"></script>
-  <!-- ================== END core-js ================== -->
-</body>
-
+    <!-- ================== BEGIN core-js ================== -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- ================== END core-js ================== -->
+  </body>
 </html>
