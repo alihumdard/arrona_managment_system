@@ -325,7 +325,6 @@
         <!-- END menu -->
 
         <!-- BEGIN menu-search -->
-
         <form class="menu-search" method="POST" name="header_search_form">
           <div class="menu-search-container">
             <div class="menu-search-icon"><i class="bi bi-search"></i></div>
@@ -405,7 +404,7 @@
             </a>
             <div class="menu-submenu">
               <div class="menu-item">
-                <a href="ArenaForm.html" class="menu-link">
+                <a href="./arenaOnboardForm.html" class="menu-link">
                   <span class="menu-icon"><i class="bi bi-people"></i></span>
                   <span class="menu-text">Arena Onboarding</span>
                 </a>
@@ -458,127 +457,274 @@
               </div>
             </div>
           </div>
+          <div class="menu-item has-sub">
+            <a href="javascript:;" class="menu-link">
+              <div class="menu-text d-flex align-items-center">Invoice</div>
+              <span class="menu-caret"><b class="caret"></b></span>
+            </a>
+            <div class="menu-submenu">
+              <div class="menu-item">
+                <a href="./InvoiceForm.html" class="menu-link">
+                  <span class="menu-icon"><i class="bi bi-people"></i></span>
+                  <span class="menu-text"> Invoice Form</span>
+                </a>
+              </div>
+              <div class="menu-item">
+                <a href="./Invoice.html" class="menu-link">
+                  <span class="menu-icon"><i class="bi bi-people"></i></span>
+                  <span class="menu-text"> Invoice</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item has-sub">
+            <a href="javascript:;" class="menu-link">
+              <div class="menu-text d-flex align-items-center">Category</div>
+              <span class="menu-caret"><b class="caret"></b></span>
+            </a>
+            <div class="menu-submenu">
+              <div class="menu-item">
+                <a href="./category.html" class="menu-link">
+                  <span class="menu-icon"><i class="bi bi-people"></i></span>
+                  <span class="menu-text"> Category Form</span>
+                </a>
+              </div>
+              <div class="menu-item">
+                <a href="./productListing.html" class="menu-link">
+                  <span class="menu-icon"><i class="bi bi-people"></i></span>
+                  <span class="menu-text"> Product Listing</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- END menu -->
       </div>
       <!-- END #top-nav -->
+      <!-- =========begin content========= -->
+      <div class="container mt-5" style="max-width: 80%; margin: auto">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Invoice</a></li>
+          <li class="breadcrumb-item active">Invoice Form</li>
+        </ul>
 
-      <!-- BEGIN #content -->
-      <div id="content" class="app-content">
-        <!-- BEGIN container -->
-        <div class="container">
-          <!-- BEGIN row -->
-          <div class="row justify-content-center">
-            <!-- BEGIN col-10 -->
-            <div class="col-xl-10">
-              <!-- BEGIN row -->
-              <div class="row">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Arena</a></li>
-                  <li class="breadcrumb-item active">Arena Onboarding Form</li>
-                </ul>
-                <!-- BEGIN col-9 -->
-                <div class="col-xl-10">
-                  <h1 class="page-header">Arena Detail FOrm</h1>
+        <h1 class="page-header">
+          Invoice Details
+          <small>Enter The Details of invoice</small>
+        </h1>
 
-                  <hr class="mb-4" />
-
-                  <form>
-                    <div class="mb-3">
-                      <label class="form-label"> Arena Name</label>
-                      <input
-                        type="text"
-                        class="form-control form-control-lg bg-inverse bg-opacity-5"
-                        placeholder="e.g John Smith"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Email Address</label>
-                      <input
-                        type="text"
-                        class="form-control form-control-lg bg-inverse bg-opacity-5"
-                        placeholder="username@address.com"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="defaultFile"
-                        >Select a Logo</label
-                      >
-                      <input
-                        type="file"
-                        class="form-control bg-inverse bg-opacity-5"
-                        id="defaultFile"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="defaultFile"
-                        >Select Image</label
-                      >
-                      <input
-                        type="file"
-                        class="form-control bg-inverse bg-opacity-5"
-                        id="defaultFile"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Phone Number</label>
-                      <input
-                        type="number"
-                        class="form-control form-control-lg bg-inverse bg-opacity-5"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">
-                        Alternative Phone Number</label
-                      >
-                      <input
-                        type="number"
-                        class="form-control form-control-lg bg-inverse bg-opacity-5"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Website</label>
-                      <input
-                        type="text"
-                        class="form-control form-control-lg bg-inverse bg-opacity-5"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Location</label>
-                      <select
-                        class="form-select form-select-lg bg-inverse bg-opacity-5"
-                      >
-                        <option>Pakistan</option>
-                        <option>UAE</option>
-                        <option>India</option>
-                      </select>
-                    </div>
-                    <div class="mb-3 text-center">
-                      <button
-                        type="submit"
-                        class="btn btn-outline-theme btn-lg w-100"
-                      >
-                        Add
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <!-- END col-9-->
-                <!-- BEGIN col-3 -->
-                <div class="col-xl-3"></div>
-                <!-- END col-3 -->
-              </div>
-              <!-- END row -->
-            </div>
-            <!-- END col-10 -->
-          </div>
-          <!-- END row -->
-        </div>
-        <!-- END container -->
+        <hr class="mb-4" />
       </div>
-      <!-- END #content -->
+      <div class="container mt-5 mb-5">
+        <form>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label class="form-label">Invoice Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter invoice number"
+              />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-control" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Due Date</label>
+              <input type="date" class="form-control" />
+            </div>
+          </div>
 
+          <h4>Bill To</h4>
+          <div class="mb-3">
+            <label class="form-label">Company Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter company name"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Address</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Enter address"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">GSTIN</label>
+            <input type="text" class="form-control" placeholder="Enter GSTIN" />
+          </div>
+
+          <h4>Payable To</h4>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter name" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">PAN Card</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter PAN card number"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">GSTIN</label>
+            <input type="text" class="form-control" placeholder="Enter GSTIN" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Contact</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter contact number"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Place</label>
+            <input type="text" class="form-control" placeholder="Enter place" />
+          </div>
+
+          <h4>Itemized Details</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Price (Incl. Taxes)</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Description"
+                  />
+                </td>
+                <td>
+                  <input type="number" class="form-control" placeholder="Qty" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" placeholder="Price" />
+                </td>
+                <td>
+                  <input type="text" class="form-control" placeholder="Total" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Bank Details for Payment</h4>
+          <div class="row">
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Bank Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter bank name"
+              />
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Account Name</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter account name"
+              />
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Account Number</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter account number"
+              />
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">IFS Code</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter IFS code"
+              />
+            </div>
+            <div class="mb-3 col-md-6">
+              <label class="form-label">Branch</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter branch name"
+              />
+            </div>
+          </div>
+
+          <h4>Amount Calculation</h4>
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label class="form-label">Subtotal</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter subtotal"
+              />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Taxes (GST 5%)</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter GST 5%"
+              />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Taxes (GST 18%)</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter GST 18%"
+              />
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Total Amount</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter total amount"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Additional Notes</label>
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Enter additional notes"
+            ></textarea>
+          </div>
+
+          <div class="invoice_btn mt-2">
+            <a type="submit" href="./Invoice.html" class="btn btn-outline-theme"
+              >Pay Now</a
+            >
+
+            <a class="btn btn-outline-theme ms-3" href="./Invoice.html">
+              Print Invoice
+            </a>
+          </div>
+        </form>
+      </div>
+      <!-- ===========End content============== -->
       <!-- BEGIN btn-scroll-top -->
       <a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"
         ><i class="fa fa-arrow-up"></i
@@ -596,5 +742,23 @@
     <script src="assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
     <script src="assets/js/demo/highlightjs.demo.js"></script>
     <!-- ================== END page-js ================== -->
+    <!-- =======begin custom js============== -->
+    <script>
+      function payNow() {
+        alert("Payment Successful");
+      }
+
+      function printInvoice() {
+        window.print();
+      }
+
+      document.getElementById("gst5").innerText =
+        "₹" + (77772.39 * 0.05).toFixed(2);
+      document.getElementById("gst18").innerText =
+        "₹" + (77772.39 * 0.18).toFixed(2);
+      document.getElementById("totalAmount").innerText =
+        "₹" + (77772.39 + 77772.39 * 0.05 + 77772.39 * 0.18).toFixed(2);
+    </script>
+    <!-- ===========End custom js============== -->
   </body>
 </html>
